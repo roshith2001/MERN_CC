@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <center>
+        <header style="background-color: #000360; color: aliceblue;">
+            <h1>Aircraft Models Store</h1>
+        </header>
+        <section style="display: flex; justify-content: space-around; color: #000360; background-color: aliceblue;">
+            <a href="index.html" style="display: inline-block; text-decoration: none;">Home</a>
+            <a href="collection.html" style="display: inline-block; text-decoration: none;">Collections</a>
+            <a href="contactus.html" style="display: inline-block; text-decoration: none;">Contact Us</a>
+        </section>
+        <section class="container">
+            <img src="https://wallpapercave.com/wp/wp4494419.jpg" alt="background-cockpit" class="container-bg">
+            <div class="container-cont">
+                <br>
+                <form>
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <label for="name">Name</label><br>
+                            </td>
+                            <td>
+                                <input class="cell" type="text" name="name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">Phone</label><br>
+                            </td>
+                            <td>
+                                <input class="cell" type="text" name="phone">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email</label><br>
+                            </td>
+                            <td>
+                                <input class="cell" type="email" name="email">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="favourite">Favoutite Aircraft</label><br>
+                            </td>
+                            <td>
+                                <select name="favourite">
+                                    <option>A320</option>
+                                    <option>A380</option>
+                                    <option>B747</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="message">Message</label><br>
+                            </td>
+                            <td>
+                            <textarea name="message" placeholder="Write your message here" style="width: 200px; height: 100px;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button type="submit">Submit</button>
+                            </td>
+                            <td>
+                            <button type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </center>
+</body>
+</html>
