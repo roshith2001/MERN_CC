@@ -4,23 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script></head>
 <body>
     <div class="container-fluid">
         <h1>Image Gallery</h1>
         <p>Exciting Images for you...</p>
         <div class="row align-items-center">
-            <img class="col-2" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
-            <img class="col-2" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
-            <img class="col-2" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
-            <img class="col-2" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
-            <img class="col-2" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
-
+            <img src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" class="col-2 rounded-circle"  alt="an image">
+            <img class="col-6 col-sm-3 rounded-circle" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
+            <img class="col-6 col-sm-3 rounded-circle" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
+            <img class="col-6 col-sm-3 rounded-circle" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
+            <img class="col-6 col-sm-3 rounded-circle" src="https://th.bing.com/th/id/OIP.c6bwfJFG5wWYxUj4tl1N7gHaE2?rs=1&pid=ImgDetMain" alt="an image">
+        </div>
+        <div>
+            <table align="center" class="table table-striped">
+                <tr>
+                    <td>
+                        <label for="name">Name</label><br>
+                    </td>
+                    <td>
+                        <input class="cell" type="text" name="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Phone</label><br>
+                    </td>
+                    <td>
+                        <input class="cell" type="text" name="phone">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label><br>
+                    </td>
+                    <td>
+                        <input class="cell" type="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="favourite">Favoutite Aircraft</label><br>
+                    </td>
+                    <td>
+                        <select name="favourite">
+                            <option>A320</option>
+                            <option>A380</option>
+                            <option>B747</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="message">Message</label><br>
+                    </td>
+                    <td>
+                    <textarea name="message" placeholder="Write your message here" style="width: 200px; height: 100px;"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Submit</button>
+                    </td>
+                    <td>
+                    <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<br>
+<br>
+<br>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          A380
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          A320
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          B737
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
